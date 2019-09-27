@@ -1,0 +1,2 @@
+# EmailSA
+Email Subscription API
