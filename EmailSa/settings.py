@@ -37,6 +37,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'django_countries',
+
+
+    'users',
+
 ]
 
 MIDDLEWARE = [
@@ -68,6 +74,9 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'EmailSa.wsgi.application'
+
+AUTH_USER_MODEL = 'users.User'
+SITE_ID = 1
 
 
 # Database
