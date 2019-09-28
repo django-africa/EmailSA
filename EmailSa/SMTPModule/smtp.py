@@ -7,7 +7,7 @@ class EmailSAMessage(EmailMessage):
                  connection=None, attachments=None, headers=None, reply_to=None):
         """
         Initialize a single email message whose properties can be set and get externally,
-        With verification in built for its properties.
+        With verification inbuilt for its properties.
         """
         super().__init__(
             subject, body, from_email, to, bcc, connection, attachments,
