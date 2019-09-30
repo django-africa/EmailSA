@@ -7,6 +7,7 @@ from django.db.models.signals import pre_save
 
 
 def get_domain(sender, instance, **kwargs):
+    #This gets domain name from AbstractUsers' email field
     if not instance.domain_name:
         instance.domain_name = instance.email.split('@')[1]
 
@@ -16,8 +17,11 @@ def validate_phone(value):
 
 class CustomUser(AbstractUser):
     domain_name = models.CharField(max_length=255, editable=False)
-
+    
+# Just before saving the CustomUser Moodel gets the domain name 
+# from the  AbstractUsers' email Address using the pre save model signal
 pre_save.connect(get_domain, sender=CustomUser)
+
 class UserProfile(models.Model):
     user = models.OneToOneField(CustomUser, on_delete=models.CASCADE)
     avatar = models.ImageField()
