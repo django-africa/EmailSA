@@ -4,6 +4,7 @@ from django_countries.fields import CountryField
 from django.core.exceptions import ValidationError
 from django.utils.translation import gettext_lazy as _
 from django.db.models.signals import pre_save
+from django.template.defaultfilters import slugify
 
 
 def get_domain(sender, instance, **kwargs):
@@ -17,15 +18,21 @@ def validate_phone(value):
 
 class CustomUser(AbstractUser):
     domain_name = models.CharField(max_length=255, editable=False)
+    slug = models.SlugField(max_length=300, verbose_name = "user_slug", null=True, blank =True)# --------------->   
+
+    def save(self, *args, **kwargs):
+        self.slug = slugify(self.username)
+        return super(CustomUser, self).save(*args, **kwargs)
     
 # Just before saving the CustomUser Moodel gets the domain name 
 # from the  AbstractUsers' email Address using the pre save model signal
 pre_save.connect(get_domain, sender=CustomUser)
 
-class UserProfile(models.Model):
-    user = models.OneToOneField(CustomUser, on_delete=models.CASCADE)
-    avatar = models.ImageField()
-    phone = models.IntegerField(validators=[validate_phone])
-    address = models.CharField(max_length=255)
-    country = CountryField()
+class Profile(models.Model):
+        objects = models.Manager()
+        user = models.OneToOneField(CustomUser, on_delete=models.CASCADE)
+        avatar = models.ImageField()
+        phone = models.IntegerField(validators=[validate_phone])
+        address = models.CharField(max_length=255)
+        country = CountryField()
 

@@ -1,17 +1,24 @@
 from rest_framework import serializers
 
+from .models import Header, Footer, Content
+
 # Header Serializer class
-class HeaderSerializer(serializers.Serializer):
-     email_from = serializers.EmailField()
-     email_title = serializers.CharField(max_length=250)
+class HeaderSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Header
+        fields = '__all__'
 
 
 # Content Serializer class
-class ContentSerializer(serializers.Serializer):
-    media = serializers.FileField()
+class ContentSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Content
+        fields = '__all__'
+
 
 
 # Footer Serializer class
-class FooterSerializer(serializers.Serializer):
-    image = serializers.ImageField()
-    link = serializers.URLField()
+class FooterSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Footer
+        fields = '__all__'
