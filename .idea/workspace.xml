@@ -30,8 +30,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/newsletter/tests/test_models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret lean-forward="true" />
+            <state relative-caret-position="240">
+              <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -147,12 +147,6 @@
               <item name="EmailSA" type="b2602c69:ProjectViewProjectNode" />
               <item name="EmailSA" type="462c0819:PsiDirectoryNode" />
               <item name="newsletter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EmailSA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EmailSA" type="462c0819:PsiDirectoryNode" />
-              <item name="newsletter" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -327,7 +321,7 @@
       <workItem from="1570023910134" duration="247000" />
       <workItem from="1570046334107" duration="1954000" />
       <workItem from="1570083861384" duration="105000" />
-      <workItem from="1570403378573" duration="7432000" />
+      <workItem from="1570403378573" duration="8281000" />
     </task>
     <servers />
   </component>
@@ -364,7 +358,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13361000" />
+    <option name="totallyTimeSpent" value="14210000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="41" y="25" width="1325" height="743" extended-state="6" />
@@ -511,8 +505,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/newsletter/tests/test_models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
+        <state relative-caret-position="240">
+          <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
