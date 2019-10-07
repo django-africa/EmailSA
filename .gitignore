@@ -89,6 +89,8 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+.idea
+.vscode
 
 # Spyder project settings
 .spyderproject
@@ -102,3 +104,16 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+subscriber/migrations/
+subscriber/__pycache__/
+
+users/migrations/
+users/__pycache__/
+
+
+SmtpModule/migrations/
+SmtpModule/__pycache__/
+
+newsletter/migrations/
+newsletter/__pycache__/
