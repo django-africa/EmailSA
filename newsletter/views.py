@@ -4,10 +4,6 @@ from .models import Header, Content, Footer
 from .serializer import HeaderSerializer, FooterSerializer, ContentSerializer
 
 
-
-# Create your views here.
-
-
 class HeaderView(APIView):
     def get(self, request):
         header = Header.objects.all()

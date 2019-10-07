@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3df9f9fa-a5b6-438c-a37d-fa7e810597bb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/newsletter/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EmailSa/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/EmailSa/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsletter/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsletter/tests/test_models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsletter/tests/test_serializer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsletter/tests/test_views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsletter/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/newsletter/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsletter/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/newsletter/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,27 +20,95 @@
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/requirements.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EmailSa/settings.py">
+        <entry file="file://$PROJECT_DIR$/newsletter/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+            <state relative-caret-position="90">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/newsletter/urls.py">
+        <entry file="file://$PROJECT_DIR$/newsletter/tests/test_models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="615">
+              <caret line="41" column="59" lean-forward="true" selection-start-line="41" selection-start-column="59" selection-end-line="41" selection-end-column="59" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/newsletter/tests/test_views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/newsletter/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/newsletter/tests/test_serializer.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/users/apps.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/users/admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/users/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#51#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/users/views.py">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -43,8 +116,17 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/EmailSa/settings.py" />
+        <option value="$PROJECT_DIR$/newsletter/serializer.py" />
         <option value="$PROJECT_DIR$/newsletter/urls.py" />
+        <option value="$PROJECT_DIR$/newsletter/admin.py" />
+        <option value="$PROJECT_DIR$/EmailSa/urls.py" />
+        <option value="$PROJECT_DIR$/EmailSa/settings.py" />
+        <option value="$PROJECT_DIR$/newsletter/views.py" />
+        <option value="$PROJECT_DIR$/newsletter/tests/__init__.py" />
+        <option value="$PROJECT_DIR$/newsletter/tests/test_serializer.py" />
+        <option value="$PROJECT_DIR$/newsletter/tests/test_views.py" />
+        <option value="$PROJECT_DIR$/newsletter/models.py" />
+        <option value="$PROJECT_DIR$/newsletter/tests/test_models.py" />
       </list>
     </option>
   </component>
@@ -59,6 +141,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -71,14 +154,20 @@
               <item name="EmailSA" type="462c0819:PsiDirectoryNode" />
               <item name="newsletter" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="EmailSA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EmailSA" type="462c0819:PsiDirectoryNode" />
+              <item name="newsletter" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -95,7 +184,107 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Django tests.Test: newsletter.tests.test_models.ContentTests.test_text">
+    <configuration name="Test: newsletter.tests.test_models.ContentTests.test_text" type="DjangoTestsConfigurationType" temporary="true">
+      <module name="EmailSA" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="newsletter.tests.test_models.ContentTests.test_text" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test: newsletter.tests.test_models.FooterTests.test_link" type="DjangoTestsConfigurationType" temporary="true">
+      <module name="EmailSA" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="newsletter.tests.test_models.FooterTests.test_link" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test: newsletter.tests.test_models.HeaderTests" type="DjangoTestsConfigurationType" temporary="true">
+      <module name="EmailSA" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="newsletter.tests.test_models.HeaderTests" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test: newsletter.tests.test_models.HeaderTests.test_get_url" type="DjangoTestsConfigurationType" temporary="true">
+      <module name="EmailSA" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="newsletter.tests.test_models.HeaderTests.test_get_url" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test: newsletter.tests.test_models.HeaderTests.test_string_representation" type="DjangoTestsConfigurationType" temporary="true">
+      <module name="EmailSA" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="newsletter.tests.test_models.HeaderTests.test_string_representation" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="EmailSA" type="Python.DjangoServer" factoryName="Django server">
       <module name="EmailSA" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -119,6 +308,15 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Django tests.Test: newsletter.tests.test_models.ContentTests.test_text" />
+        <item itemvalue="Django tests.Test: newsletter.tests.test_models.HeaderTests" />
+        <item itemvalue="Django tests.Test: newsletter.tests.test_models.HeaderTests.test_string_representation" />
+        <item itemvalue="Django tests.Test: newsletter.tests.test_models.FooterTests.test_link" />
+        <item itemvalue="Django tests.Test: newsletter.tests.test_models.HeaderTests.test_get_url" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -130,56 +328,203 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1569943494631</updated>
-      <workItem from="1569943499724" duration="273000" />
+      <workItem from="1569943499724" duration="2387000" />
+      <workItem from="1569958074065" duration="1236000" />
+      <workItem from="1570023910134" duration="247000" />
+      <workItem from="1570046334107" duration="1954000" />
+      <workItem from="1570083861384" duration="105000" />
+      <workItem from="1570403378573" duration="6156000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="Test__newsletter_tests_test_models_HeaderTests_test_string_representation - 2019.10.07 at 01h 43m 42s.xml">
+      <configuration name="Test: newsletter.tests.test_models.HeaderTests.test_string_representation" configurationId="DjangoTestsConfigurationType" />
+    </history-entry>
+    <history-entry file="Test__newsletter_tests_test_models_HeaderTests_test_string_representation - 2019.10.07 at 01h 43m 59s.xml">
+      <configuration name="Test: newsletter.tests.test_models.HeaderTests.test_string_representation" configurationId="DjangoTestsConfigurationType" />
+    </history-entry>
+    <history-entry file="Test__newsletter_tests_test_models_HeaderTests_test_string_representation - 2019.10.07 at 01h 44m 43s.xml">
+      <configuration name="Test: newsletter.tests.test_models.HeaderTests.test_string_representation" configurationId="DjangoTestsConfigurationType" />
+    </history-entry>
+    <history-entry file="Test__newsletter_tests_test_models_HeaderTests_test_string_representation - 2019.10.07 at 01h 46m 07s.xml">
+      <configuration name="Test: newsletter.tests.test_models.HeaderTests.test_string_representation" configurationId="DjangoTestsConfigurationType" />
+    </history-entry>
+    <history-entry file="Test__newsletter_tests_test_models_HeaderTests_test_string_representation - 2019.10.07 at 01h 46m 29s.xml">
+      <configuration name="Test: newsletter.tests.test_models.HeaderTests.test_string_representation" configurationId="DjangoTestsConfigurationType" />
+    </history-entry>
+    <history-entry file="Test__newsletter_tests_test_models_HeaderTests_test_string_representation - 2019.10.07 at 01h 47m 59s.xml">
+      <configuration name="Test: newsletter.tests.test_models.HeaderTests.test_string_representation" configurationId="DjangoTestsConfigurationType" />
+    </history-entry>
+    <history-entry file="Test__newsletter_tests_test_models_HeaderTests_test_string_representation - 2019.10.07 at 01h 48m 38s.xml">
+      <configuration name="Test: newsletter.tests.test_models.HeaderTests.test_string_representation" configurationId="DjangoTestsConfigurationType" />
+    </history-entry>
+    <history-entry file="Test__newsletter_tests_test_models_HeaderTests_test_string_representation - 2019.10.07 at 01h 49m 16s.xml">
+      <configuration name="Test: newsletter.tests.test_models.HeaderTests.test_string_representation" configurationId="DjangoTestsConfigurationType" />
+    </history-entry>
+    <history-entry file="Test__newsletter_tests_test_models_HeaderTests - 2019.10.07 at 01h 49m 41s.xml">
+      <configuration name="Test: newsletter.tests.test_models.HeaderTests" configurationId="DjangoTestsConfigurationType" />
+    </history-entry>
+    <history-entry file="Test__newsletter_tests_test_models_ContentTests_test_text - 2019.10.07 at 01h 52m 16s.xml">
+      <configuration name="Test: newsletter.tests.test_models.ContentTests.test_text" configurationId="DjangoTestsConfigurationType" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="273000" />
+    <option name="totallyTimeSpent" value="12085000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="41" y="25" width="1325" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24941543" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26890102" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" weight="0.32956383" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32956383" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32956383" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="SciView" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5003897" side_tool="true" weight="0.32956383" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49961028" weight="0.32956383" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32956383" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/EmailSA$Test__newsletter_tests_test_models_ContentTests_test_text.coverage" NAME="Test: newsletter.tests.test_models.ContentTests.test_text Coverage Results" MODIFIED="1570409535204" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/EmailSA$Test__newsletter_tests_test_models_HeaderTests.coverage" NAME="Test: newsletter.tests.test_models.HeaderTests Coverage Results" MODIFIED="1570409379616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/EmailSA$Test__newsletter_tests_test_models_HeaderTests_test_email_from.coverage" NAME="Test: newsletter.tests.test_models.HeaderTests.test_email_from Coverage Results" MODIFIED="1570405203625" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/EmailSA$Test__newsletter_tests_test_models_FooterTests_test_link.coverage" NAME="Test: newsletter.tests.test_models.FooterTests.test_link Coverage Results" MODIFIED="1570407723846" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/EmailSA$Test__newsletter_tests_test_models_HeaderTests_test_get_url.coverage" NAME="Test: newsletter.tests.test_models.HeaderTests.test_get_url Coverage Results" MODIFIED="1570406553120" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/EmailSA$Test__newsletter_tests_test_models_HeaderTests_test_string_representation.coverage" NAME="Test: newsletter.tests.test_models.HeaderTests.test_string_representation Coverage Results" MODIFIED="1570409354771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/newsletter/serializer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/EmailSa/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+        <state relative-caret-position="1950">
+          <caret line="130" selection-start-line="130" selection-end-line="130" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EmailSa/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+          <folding>
+            <element signature="e#631#663#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newsletter/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/newsletter/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users/tests.py">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users/views.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newsletter/tests/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newsletter/tests/test_serializer.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newsletter/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newsletter/tests/test_views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newsletter/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newsletter/tests/test_models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="41" column="59" lean-forward="true" selection-start-line="41" selection-start-column="59" selection-end-line="41" selection-end-column="59" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

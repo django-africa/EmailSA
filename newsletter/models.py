@@ -8,11 +8,15 @@ class Header(models.Model):
     email_title = models.TextField(max_length=250)
 
     def __str__(self):
-        return self.email_from
+        return self.email_title
 
 
 class Content(models.Model):
-    media = models.FileField(upload_to='media')
+    media = models.FileField()
+    text = models.TextField(default='empty')
+
+    def __str__(self):
+        return self.text
 
 
 class Footer(models.Model):
