@@ -1,10 +1,10 @@
 from django.db import models
-from users import models as Custom
+from django.contrib.auth.models import User
 # Create your models here.
 
 class Subscriber(models.Model):
     objects = models.Manager()
-    owner = models.OneToOneField(Custom.CustomUser, on_delete=models.CASCADE)
+    owner = models.OneToOneField(User, on_delete=models.CASCADE)
     email = models.EmailField()
     date = models.DateField(auto_now_add=True)
     interest = models.CharField(max_length=255)

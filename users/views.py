@@ -1,26 +1,19 @@
-# from django.contrib.auth.models import Group
+from django.contrib.auth import login, authenticate
+from django.shortcuts import render, redirect
 
-# from .models import CustomUser
-# from .serializers import UserSerializer, GroupSerializer
-
-# from rest_framework import generics, permissions
+from django.contrib.auth.forms import UserCreationForm
 
 
-# # Create the API views
-# class UserList(generics.ListCreateAPIView):
-#     permission_classes = [permissions.IsAuthenticated, TokenHasReadWriteScope]
-#     queryset = CustomUser.objects.all()
-#     serializer_class = UserSerializer
-
-
-# class UserDetails(generics.RetrieveAPIView):
-#     permission_classes = [permissions.IsAuthenticated, TokenHasReadWriteScope]
-#     queryset = CustomUser.objects.all()
-#     serializer_class = UserSerializer
-
-
-# class GroupList(generics.ListAPIView):
-#     permission_classes = [permissions.IsAuthenticated, TokenHasScope]
-#     required_scopes = ['groups']
-#     queryset = Group.objects.all()
-#     serializer_class = GroupSerializer
+def signup(request):
+    if request.method == 'POST':
+        form = UserCreationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            username = form.cleaned_data.get('username')
+            raw_password = form.cleaned_data.get('password1')
+            user = authenticate(username=username, password=raw_password)
+            login(request, user)
+            return redirect('user')
+    else:
+        form = UserCreationForm()
+    return render(request, 'signup.html', {'form': form})

@@ -96,7 +96,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'EmailSa.wsgi.application'
 
-AUTH_USER_MODEL = 'users.CustomUser'
+AUTH_USER_MODEL = 'auth.User'
 SITE_ID = 1
 
 

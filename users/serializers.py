@@ -1,8 +1,8 @@
 from django.contrib.auth.models import Group
 from rest_framework import serializers 
 
-
-from .models import CustomUser, Profile
+from django.contrib.auth.models import User
+from .models import UserProfile
 
 # first we define the serializers
 
@@ -15,12 +15,11 @@ class GroupSerializer(serializers.ModelSerializer):
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
-        model = CustomUser
+        model = User
         fields = '__all__'
 
 
 class ProfileSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Profile
+        model = UserProfile
         fields = '__all__'
-

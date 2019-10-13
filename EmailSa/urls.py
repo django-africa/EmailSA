@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import include, path
 from django.conf.urls import url
 from rest_framework import routers
-from users import viewsets
+from users import viewsets, views
 from newsletter import viewsets as newsview
 from subscriber import viewsets as subview
 
@@ -25,7 +25,7 @@ from .views import CustomAuthToken
 
 
 router = routers.DefaultRouter()
-router.register(r'users', viewsets.UserViewSet, basename='CustomUser')
+router.register(r'users', viewsets.UserViewSet, basename='user')
 router.register(r'profile', viewsets.ProfileViewSet, basename='Profile')
 
 router.register(r'header', newsview.HeaderViewSet)
@@ -37,7 +37,8 @@ router.register(r'subscriberProfile', subview.ProfileViewSet)
 
 
 urlpatterns = [
-    url(r'^', include(router.urls)),
+    url(r'^', include(router.urls), name=''),
+    url(r'^signup/$', views.signup, name='signup'),
     url(r'^api-auth/', include('rest_framework.urls')),
     url(r'^api-token-auth/',  CustomAuthToken.as_view()),
     path('admin/', admin.site.urls),
