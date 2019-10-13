@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    # 'django.contrib.admin',
+    'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -41,14 +41,30 @@ INSTALLED_APPS = [
     # imported modules
     'rest_framework',
     'django_countries',
+    'rest_framework.authtoken',
 
     # Internal Modules
     'newsletter',
     'users',
     'subscriber',
-    # 'Smtp'
-
+    # 'Smtp,'
 ]
+
+REST_FRAMEWORK = {
+        'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+    ]
+}
+
+# # SMTP Mail service with decouple
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_HOST = smtp.EmailSAMessage.host
+# EMAIL_HOST_USER = smtp.EmailSAMessage.user
+# EMAIL_HOST_PASSWORD = smtp.EmailSAMessage.password
+# EMAIL_PORT = smtp.EmailSAMessage.port
+# EMAIL_USE_TLS = True
+# DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -127,6 +143,7 @@ USE_L10N = True
 
 USE_TZ = True
 
+CORS_ORIGIN_ALLOW_ALL = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
