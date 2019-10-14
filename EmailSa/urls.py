@@ -22,6 +22,7 @@ from newsletter import viewsets as newsview
 from subscriber import viewsets as subview
 
 from .views import CustomAuthToken
+from rest_framework.authtoken import views as oviews
 
 
 router = routers.DefaultRouter()
@@ -37,9 +38,9 @@ router.register(r'subscriberProfile', subview.ProfileViewSet)
 
 
 urlpatterns = [
-    url(r'^', include(router.urls), name=''),
-    url(r'^signup/$', views.signup, name='signup'),
-    url(r'^api-auth/', include('rest_framework.urls')),
-    url(r'^api-token-auth/',  CustomAuthToken.as_view()),
-    path('admin/', admin.site.urls),
+    url(r'', include(router.urls), name=''),
+    url(r'signup/', views.signup, name='signup'),
+    url(r'api-auth/', include('rest_framework.urls')),
+    url(r'api-token-auth/',  oviews.obtain_auth_token),
+    url(r'admin/', admin.site.urls),
 ]
