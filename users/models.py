@@ -4,9 +4,17 @@ from django_countries.fields import CountryField
 from django.core.exceptions import ValidationError
 from django.utils.translation import gettext_lazy as _
 
+from django.dispatch import receiver
+from django.db.models.signals import post_save
+from rest_framework.authtoken.models import Token
 
 
 
+
+@receiver(post_save, sender=User)
+def create_auth_token(sender, instance=None, created=False, **kwargs):
+    if created:
+        Token.objects.create(user=instance)
 
 
 def validate_phone(value):

@@ -25,7 +25,7 @@ from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
 
 from .views import CustomAuthToken
-from rest_framework.authtoken import views as oviews
+# from rest_framework.authtoken import views as oviews
 
 
 router = routers.DefaultRouter()
@@ -50,11 +50,11 @@ schema_view = get_schema_view(
 
 
 urlpatterns = [
-    url(r'', include(router.urls), name=''),
+    url(r'api/', include(router.urls), name=''),
     url(r'signup/', views.signup, name='signup'),
     url(r'api-auth/', include('rest_framework.urls')),
-    url(r'api-token-auth/',  oviews.obtain_auth_token),
-    path('doc/', schema_view.with_ui('swagger', cache_timeout=0), name='swagger'),
-    path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='swagger-redoc'),
+    # url(r'api-token-auth/',  oviews.obtain_auth_token),
+    path('doc', schema_view.with_ui('swagger', cache_timeout=0), name='swagger'),
+    path('', schema_view.with_ui('redoc', cache_timeout=0), name='swagger-redoc'),
     url(r'admin/', admin.site.urls),
 ]
