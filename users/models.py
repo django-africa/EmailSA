@@ -20,11 +20,6 @@ def create_auth_token(sender, instance=None, created=False, **kwargs):
 def validate_phone(value):
     if len(str(value)) > 13:
         raise ValidationError(_('Phone number cannot be longer than 13'))
-    
-
-# Just before saving the CustomUser Moodel gets the domain name 
-# from the  AbstractUsers' email Address using the pre save model signal
-
 
 
 

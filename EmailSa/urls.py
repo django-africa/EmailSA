@@ -54,7 +54,7 @@ urlpatterns = [
     url(r'signup/', views.signup, name='signup'),
     url(r'api-auth/', include('rest_framework.urls')),
     # url(r'api-token-auth/',  oviews.obtain_auth_token),
-    path('doc', schema_view.with_ui('swagger', cache_timeout=0), name='swagger'),
+    path('doc/', schema_view.with_ui('swagger', cache_timeout=0), name='swagger'),
     path('', schema_view.with_ui('redoc', cache_timeout=0), name='swagger-redoc'),
     url(r'admin/', admin.site.urls),
 ]
