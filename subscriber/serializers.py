@@ -9,6 +9,7 @@ class SubscriberSerializer(serializers.ModelSerializer):
 
 class ProfileSerializer(serializers.ModelSerializer):
     class Meta:
+        ref_name = 'subscriber_profile'
         model = Profile
         fields = '__all__'
 

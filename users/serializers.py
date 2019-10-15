@@ -21,5 +21,6 @@ class UserSerializer(serializers.ModelSerializer):
 
 class ProfileSerializer(serializers.ModelSerializer):
     class Meta:
+        ref_name = 'user_profile'
         model = UserProfile
         fields = '__all__'

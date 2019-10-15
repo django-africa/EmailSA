@@ -48,6 +48,10 @@ INSTALLED_APPS = [
     'users',
     'subscriber',
     # 'Smtp,'
+    #swagger
+    'drf_yasg',
+    #corsheader
+    'corsheaders'
 ]
 
 REST_FRAMEWORK = {
@@ -67,6 +71,7 @@ REST_FRAMEWORK = {
 # DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
